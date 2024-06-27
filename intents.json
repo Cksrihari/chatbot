@@ -1,0 +1,213 @@
+{
+  "greeting": {
+    "patterns": [
+      "hi",
+      "Hi",
+      "hello",
+      "Hello",
+      "hey",
+      "Hey",
+      "holla",
+      "Holla"
+    ],
+    "responses": [
+      "Thanks for checking in.\nIm here to assist you with the best train tickets available.\nPlease enter the Departure and Destination Locations.",
+      "Thank you for being there!\nIm here to assist you with the best train tickets available.\nPlease enter the Departure and Destination Locations."
+    ]
+  },
+  "goodbye": {
+    "patterns": [
+      "bye",
+      "goodbye"
+    ],
+    "responses": [
+      "Have a nice time, bye.",
+      "Thank you for using this service. Goodbye"
+    ]
+  },
+  "thanks": {
+    "patterns": [
+      "thanks",
+      "thank you",
+      "cheers"
+    ],
+    "responses": [
+      "Happy to help!",
+      "Any time!",
+      "You're welcome",
+      "My pleasure",
+      "you too mate."
+    ]
+  },
+  "book_train_tickets": {
+    "patterns": [
+      "I am traveling from to .",
+      "From to .",
+      "I need to go from to .",
+      "I will be traveling from to .",
+      "My trip is from to .",
+      "Journey from to .",
+      "Traveling from to ."
+    ],
+    "responses": [
+      "Absolutely, Could you please specify your preferred date and time of travel?",
+      "Sure thing! Could you share the date and time you plan to travel?",
+      "No problem! When are you planning to embark on your journey?",
+      "Certainly, Please inform me of your travel date and time.",
+      "Absolutely! Kindly provide me with your travel date and time.",
+      "Sure thing! When and at what time are you looking to travel?",
+      "Of course, Can you please specify the date and time you wish to travel?",
+      "Absolutely, Could you please provide your preferred travel date and time?"
+    ]
+  },
+    "ask_all_details": {
+    "patterns": [
+      "I want to book a train",
+      "Book a train for me",
+      "Find me a cheapest ticket",
+      "I need to book a train",
+      "Can you help me book a train?",
+      "I'd like to book a train",
+      "Please book a train for me",
+      "I want to book a cheap train"
+    ],
+    "responses": [
+      "Sure, I can help with that. Where are you traveling from and to?",
+      "I'd be happy to assist. What's your departure and destination?",
+      "Of course! Please provide your departure and destination cities.",
+      "Absolutely! Could you tell me where you're traveling from and to?"
+    ]
+  },
+  "from_station": {
+    "patterns": [
+      "I am travelling from",
+      "Im travelling from",
+      "From"
+    ],
+    "responses": [
+      "Your departure station has been noted."
+    ]
+  },
+  "to_station": {
+    "patterns": [
+      "I am travelling to",
+      "to",
+      "heading to",
+      "going to"
+    ],
+    "responses": [
+      "Your destination station has been noted."
+    ]
+  },
+  "ask_date_time": {
+    "patterns": [
+      "I want to travel on at .",
+      "[date], [time]",
+      "[date] [time]",
+      "today at",
+      "tomorrow at",
+      "The date and time of my travel are at .",
+      "I will travel on at .",
+      "My trip is on at .",
+      "I plan to travel on at .",
+      "My journey is on at .",
+      "On at.",
+      "Date: , Time: ."
+    ],
+    "responses": [
+      "Here is the best result i could find."
+    ]
+  },
+  "unknown_intent": {
+    "patterns": [
+
+    ],
+    "responses": [
+      "I am sorry I do not understand what you are saying. My capabilities are limited."
+    ]
+  },
+    "what_can_you_do": {
+    "patterns": [
+      "what can you do?",
+      "how can you help me?",
+      "what services do you provide?",
+      "what can you assist me with?",
+      "how can you assist me?",
+      "what are your capabilities?"
+    ],
+    "responses": [
+      "I can help you book train tickets, find the cheapest travel options, and provide travel information. How can I assist you today?",
+      "I assist with booking trains, finding affordable travel options, and providing travel details. What do you need help with?",
+      "I can help you with booking train tickets and finding the best travel deals. What can I do for you?",
+      "I assist in booking trains, finding cheap travel options, and offering travel advice. How can I help you today?",
+      "I provide train booking services, search for affordable tickets, and give travel information. How may I assist you?"
+    ]
+  },
+  "emergency": {
+    "patterns": [
+      "I have an emergency",
+      "Emergency",
+      "I need urgent help",
+      "This is an emergency",
+      "Please help me, it's urgent",
+      "I need immediate assistance",
+      "Can you help with an emergency?",
+      "It's an urgent situation"
+    ],
+    "responses": [
+      "I'm sorry to hear that you're in an emergency. Please call the appropriate emergency services for immediate assistance.\n999 - The main emergency number\nThis is the emergency number for police, ambulance, fire brigade, coastguard, cliff rescue, mountain rescue, cave rescue, etc.",
+      "For urgent matters, please contact the relevant emergency services in your area.\n999 - The main emergency number\nThis is the emergency number for police, ambulance, fire brigade, coastguard, cliff rescue, mountain rescue, cave rescue, etc.",
+      "If this is a serious emergency, please dial the emergency services number for immediate help.\n999 - The main emergency number\nThis is the emergency number for police, ambulance, fire brigade, coastguard, cliff rescue, mountain rescue, cave rescue, etc.",
+      "I recommend contacting emergency services for urgent assistance.\n999 - The main emergency number\nThis is the emergency number for police, ambulance, fire brigade, coastguard, cliff rescue, mountain rescue, cave rescue, etc.",
+      "Please reach out to emergency services for immediate help in urgent situations.\n999 - The main emergency number\nThis is the emergency number for police, ambulance, fire brigade, coastguard, cliff rescue, mountain rescue, cave rescue, etc."
+    ]
+  },
+  "past_date_time": {
+    "patterns": [],
+    "responses": [
+      "Date or time cannot be in the past, please retry with valid input"
+    ]
+  },
+  "all_entities": {
+    "patterns": [
+      "please find ticket from to . the date is . the time is .",
+      "find ticket from to . date is and time is .",
+      "get ticket from to on at .",
+      "I want to travel from to on at .",
+      "ticket from to today at",
+      "ticket from to tomorrow at",
+      "train from to today at",
+      "train from to tomorrow at"
+    ],
+    "responses": ["Above are the best results i could find"]
+  },
+  "show_recorded_data": {
+    "patterns": [
+      "Show me all the recoded data",
+      "Which data is not recorded yet?",
+      "Can you show me the details that you have recorded."
+    ],
+    "responses": [
+      "Above are the requested information"
+    ]
+  },
+  "predict_delay": {
+    "patterns": [
+      "train has been delayed, can you predict my arrival time.",
+      "Can you predict the delay time between stations for my travel.",
+      "predict delay",
+      "I have train delay."
+    ],
+    "responses": [
+      "I can predict your arrival time, please tell me your departure station, arrival station, departure delay in minutes and your expected arrival time. I can only predict delay times of stations between Liverpool Street Station and Norwich."
+    ]
+  },
+  "contingency_plans": {
+    "patterns": [
+      "there is a blockage, i need some contingency plans"
+    ],
+    "responses": [
+      "Yes, i can help you with that"
+    ]
+  }
+}

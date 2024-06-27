@@ -1,0 +1,65 @@
+{
+  "dep_station": {
+    "patterns": [
+      "departure station is"
+    ],
+    "responses": [
+      "Got your departure station."
+    ]
+  },
+  "arr_station": {
+    "patterns": [
+      "arrival station is"
+    ],
+    "responses": [
+      "Got your arrival station."
+    ]
+  },
+  "dep_delay": {
+    "patterns": [
+      "departure delay is",
+      "departing delay is",
+      "delay is"
+    ],
+    "responses": [
+      "Got your departure delay time."
+    ]
+  },
+  "expected_arrival": {
+    "patterns": [
+      "expected arrival time is"
+    ],
+    "responses": [
+      "Got your expected arrival time."
+    ]
+  },
+  "unknown_intent": {
+    "patterns": [
+
+    ],
+    "responses": [
+      "I am sorry I do not understand what you are saying. My capabilities are limited."
+    ]
+  },
+  "change_conversation": {
+    "patterns": [
+      "would like to have a different conversation.",
+      "Actually I would like to have a different conversation.",
+      "I dont need you to predict my delay now."
+    ],
+    "responses": [
+      "Alright, lets talk about something else. Any details that you have mentioned are saved."
+    ]
+  },
+    "predict_delay": {
+    "patterns": [
+      "train has been delayed, can you predict my arrival time.",
+      "Can you predict the delay time between stations for my travel.",
+      "predict delay",
+      "I have train delay."
+    ],
+    "responses": [
+      "I can predict your arrival time, please tell me your departure station, \narrival station, departure delay in minutes and your expected arrival time. \nI can only predict delay times of stations between Liverpool Street Station and Norwich."
+    ]
+  }
+}

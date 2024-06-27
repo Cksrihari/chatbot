@@ -1,0 +1,13 @@
+code_plan,station_1,station_2,blockage
+GE09,Colchester,Maningtree,partial
+GE10,Halifax,Ipswich,partial
+GE11,Ipswich,East Suffolk,partial
+GE12,East Suffolk,Haughley,partial
+GE13,Haughley,Diss,partial
+GE14,Diss,Trowse,partial
+GE22,Colchester,Maningtree,full
+GE23,Maningtree,Ipswich,full
+GE24,Ipswich,Stowmarket,full
+GE25,Stowmarket,Diss,full
+GE26,Diss,Trowse,full
+GE09_1,Maningtree,Halifax,partial

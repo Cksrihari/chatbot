@@ -1,0 +1,73 @@
+{
+  "partial_blockage": {
+    "patterns": [
+      "I have a partial blockage between stations.",
+      "Can you give me protocols regarding a partial blockage between stations.",
+      "There is a partial blockage between stations."
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "full_blockage": {
+    "patterns": [
+      "I have a full blockage between stations.",
+      "Can you give me protocols regarding a full blockage between stations.",
+      "There is a full blockage between stations."
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "blocked_stations": {
+    "patterns": [
+      "The blockage is between and .",
+      "The tracks between and are blocked."
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "train_status": {
+    "patterns": [
+      "The status of the train is",
+      "The train is"
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "train_service": {
+    "patterns": [
+      "The train service is.",
+      "It is a train service.",
+      "It is a train"
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "time_intent": {
+    "patterns": [
+      "The time is."
+    ],
+    "responses": [
+      "Can you give me more details please."
+    ]
+  },
+  "change_conversation": {
+    "patterns": [
+      "Actually I would like to have a different conversation.",
+      "I dont need you to get contingency plans."
+    ],
+    "responses": [
+      "Alright, lets talk about something else."
+    ]
+  },
+  "unknown_intent": {
+    "patterns": [],
+    "responses":[
+      "I'm sorry i can't understand what you are saying."
+    ]
+  }
+}

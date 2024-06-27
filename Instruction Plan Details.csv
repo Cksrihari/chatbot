@@ -1,0 +1,377 @@
+code_plan,operator,message
+GE09,INS-01,-GriffinWharf may be blocked
+GE09,INS-01,- Flighting of triains is preferable to ensure as many trains through the sections as possible.
+GE09,INS-02,Colchester Ð Manningtree: 
+GE09,INS-02,Pilotman 
+GE09,INS-02,Handsignaller 
+GE09,INS-02,Barrier Operator for Ardleigh CCTV 
+GE09,INS-02,Barrier Operator for Manningtree CCTV (if SLW over the Down Main)
+GE09,INS-02,
+GE09,INS-02,Manningtree Ð Halifax Jn: 
+GE09,INS-02,Pilotman 
+GE09,INS-02,Handsignaller
+GE09,INS-03,"Points at Colchester: 3025, 3029, 3034"
+GE09,INS-03,"Points at Manningtree: 1247, 1253, 1261, 1262"
+GE09,INS-03,"Points at Halifax Jn: 1301, 130"
+GE09,INS-04,-CSL2 mobilised for North via on-call structure
+GE09,INS-04,-Request Driver Manager to Colchester via On-Call Operations L1 North
+GE09,INS-04,-Advise Liverpool Street Duty Station Manager
+GE09,INS-04,-Request RPI assistance to aid transfer of passengers to Harwich shuttle;
+GE09,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ipswich"
+GE09,INS-04,and Norwich
+GE09,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE09,INS-05,Norwich).
+GE09,INS-05,-Peak: Special service to operate COL-LST calling at all stations to CHM and then SNF and SRA in place of 1Yxx services.
+GE09,INS-05,-Off-Peak: None Ð train service operates as revised.
+GE09,INS-06,"Owing to a {xxx} between Colchester and Manningtree/Ipswich and Manningtree , trains between Colchester and Ipswich are experiencing 20 minute delays and an amended train service is in place"
+GE09,INS-07,Contingency Plan GE9 is in operation/ being implemented with no/ the following variations.
+GE09,INS-08,Greater Anglia Service Update at xx:xx
+GE09,INS-08,"Owing to a xxx between Colchester and Manningtree/Ipswich and Manningtree ,1 of the lines Colchester-bound/Ipswich-bound is currently closed."
+GE09,INS-08,We expect the line to reopen at xxx / the line is currently closed and we are working to assess the problem / The line has now reopened and we
+GE09,INS-08,are working to return train services to normal
+GE09,INS-08,In order to manage the reduced line capacity to/from Colchester and Ipswich we are currently running a reduced train service and expect this to
+GE09,INS-08,continue until approximately xx:xx
+GE09,INS-08,"London Ð Harwich, Ipswich and Norwich:"
+GE09,INS-08,Services which would normally run between London and Harwich are running between Maningtree and Harwich in both directions. Customers wishing to travel to/from these stations should change at Manningtree. Services which would normally run between London and Colchester Town are suspended Customers wishing to travel to/from Colchester Town are advised to use local buses to Colchester.
+GE09,INS-08,
+GE09,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE10,INS-01,Consider extending services through to Manningtree / ECS to Mistley and return for PM peak & Off peak also where possible.
+GE10,INS-02,Ipswich MOM to be stationed at Halifax Jn
+GE10,INS-02,During AM peak Colchester MOM to be stationed at Manningtree
+GE10,INS-03,"Points: 1301, 1302, 1312, 1326, 1341, 1343"
+GE10,INS-04,-CSL2 mobilised for North via on-call structure
+GE10,INS-04,-Request Driver Manager to Colchester via On-Call Operations L1 North
+GE10,INS-04,-Advise Liverpool Street Duty Station Manager
+GE10,INS-04,-Request RPI assistance to Ipswich.
+GE10,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ipswich"
+GE10,INS-04,and Norwich
+GE10,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE10,INS-05,Norwich).
+GE10,INS-05,-Peak: Special service to operate COL-LST calling at all stations to CHM and then SNF and SRA in place of 1Yxx services.
+GE10,INS-05,-Off-Peak: None Ð train service operates as revised.
+GE10,INS-06,Owing to a {xxx} between Manningtree and Ipswich trains between Colchester and Ipswich are experiencing 20 minute delays and an amended
+GE10,INS-06,train service is in place.
+GE10,INS-07,Contingency Plan GE10 is in operation/ being implemented with no/ the following variations.
+GE10,INS-08,Greater Anglia Service Update at xx:xx
+GE10,INS-08,"Owing to a xxx between Colchester and Manningtree/Ipswich and Manningtree , one of the lines Colchester-bound/Ipswich-bound is currently closed. We expect the line to reopen at xxx / the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to return train services to normal. In order to manage the reduced line capacity to/from Colchester and Ipswich we are currently running a reduced train service and expect this to continue until approximately xx:xx"
+GE10,INS-08,London Ð Ipswich and Norwich: Services which would normally run between London and Ipswich and Norwich are running with delays/ at a reduced frequency between Maningtree
+GE10,INS-08,and Ipswich. Customers should allow additional time for their journeys. All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE11,INS-01,All 1Pxx services stop addl Stowmarket
+GE11,INS-01,If 2Wxx term stowmarketÉbus service Ipswich-Needham Mkt-Stowmarket
+GE11,INS-02,MOMÕs or Maintenance staff capable of route setting to be moved / positioned Ipswich to ensure that someone is on site should there be issues with
+GE11,INS-02,pointwork.
+GE11,INS-03,"Points: 1341, 1326, 1364"
+GE11,INS-04,-CSL2 mobilised for North via on-call structure.
+GE11,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Ipswich and"
+GE11,INS-04,Norwich.
+GE11,INS-04,All 1Pxx services stop addl Stowmarket
+GE11,INS-04,-If 2Wxx term stowmarketÉbus service Ipswich-Needham Mkt-Stowmarket
+GE11,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE11,INS-05,Norwich). Or
+GE11,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and take GA services via Ely and Thetford.
+GE11,INS-05,-Buses to operate Felixstowe services calling all stations except Westerfield.
+GE11,INS-06,"Owing to a {xxx} in the Ipswich area, an amended train service is in place"
+GE11,INS-07,Contingency Plan GE11 is in operation/ being implemented
+GE11,INS-07,with no/ the following variations.
+GE11,INS-07,All 1Pxx services stop addl Stowmarket
+GE11,INS-07,If 2Wxx term stowmarketÉbus service Ipswich-Needham Mkt-Stowmarket
+GE11,INS-08,Greater Anglia Service Update at xx:xx
+GE11,INS-08,Owing to a xxx between Ipswich and East Suffolk Junction one of the lines Norwich-bound/Colchester-bound is currently closed. We expect the line
+GE11,INS-08,to reopen at xxx / the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to return
+GE11,INS-08,train services to normal.
+GE11,INS-08,"In order to manage the reduced line capacity into Ipswich from the North, we are currently running a reduced train service and expect this to"
+GE11,INS-08,continue until approximately xx:xx
+GE11,INS-08,Ipswich Ð Felixstowe:
+GE11,INS-08,Buses are replacing trains between Ipswich and Felixstowe. Please note that rail replacement buses will not call at Westerfield. Customers for
+GE11,INS-08,Westerfield should use trains bound for Lowestoft.
+GE11,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.`
+GE12,INS-01,Freight to be diverted via London
+GE12,INS-01,"Monitor inbound freight, liaise with freight York & SSM Cambridge re-holding points"
+GE12,INS-02,Pilotman
+GE12,INS-02,Handsignaller
+GE12,INS-02,Barrier man at Claydon CCTV
+GE12,INS-02,Barrier man at Regent Street CCTV
+GE12,INS-02,Barrier Man at Haughley AHBC
+GE12,INS-02,Cow Green GSP Operator (if issue is between Stowmarket and Haughley Jn and SLW is over the Down Main Line)
+GE12,INS-03,"Points: 1364, 2374, 2379 2384, 2385, 2389, 2392, 2416 (Cow Green GSP)"
+GE12,INS-04,-CSL2 mobilised for North via on-call structure
+GE12,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Ipswich and"
+GE12,INS-04,Norwich
+GE12,INS-05,-TFL ticket acceptance (reasonable routes Liverpool St and Kings Cross)
+GE12,INS-05,-GTR ticket acceptance Kings Cross-Peterborough
+GE12,INS-05,-EMT Ticket acceptance Norwich-Peterborough
+GE12,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE12,INS-05,Norwich).
+GE12,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE12,INS-05,Norwich).
+GE12,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and GA services Norwich-Cambridge or EMT services to Norwich-Ely.
+GE12,INS-05,-Peterborough Customers from Ipswich to travel via Norwich and EMT services or via London and GTR services.
+GE12,INS-06,"Owing to a {xxx} between Diss and Stowmarket/ Stowmarket and Needham Market/ Needham Market and Ipswich, trains between Norwich and"
+GE12,INS-06,Ipswich are experiencing 20 minute delays and an amended train service is in place.
+GE12,INS-07,Contingency Plan GE12 is in operation/ being implemented with no/ the following variations.
+GE12,INS-08,Greater Anglia Service Update at xx:xx
+GE12,INS-08,Owing to a xxx between Haughley and Ipswich one of the lines Norwich-bound/Ipswich-bound is currently closed. We expect the line to reopen at
+GE12,INS-08,xxx / the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to return train
+GE12,INS-08,services to normal.
+GE12,INS-08,"In order to manage the reduced line capacity between Ipswich and Diss/ Stowmarket/ Needham Market, we are currently running a reduced train"
+GE12,INS-08,service between Norwich and Ipswich and Cambridge and Ipswich. We expect this to continue until approximately xx:xx
+GE12,INS-08,London Ð Norwich services:
+GE12,INS-08,Trains are running at an hourly frequency with extended journey times. Customers to/ from Norwich are advised to travel via Cambridge and GTR
+GE12,INS-08,services to/from Kings Cross.
+GE12,INS-08,Ipswich Ð Cambridge services:
+GE12,INS-08,Trains between Ipswich and Cambridge will operate to/from Stowmarket. Customers for Cambridge should change at Stowmarket.
+GE12,INS-08,Ipswich Ð Peterborough services:
+GE12,INS-08,Trains between Ipswich and Peterborough are not operating. Customers for Peterborough and Ely should travel to Norwich and travel on East
+GE12,INS-08,Midlands Trains services from Norwich to Liverpool Lime St.Customers may also travel via London using GTR services from Kings Cross.
+GE12,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE13,INS-01,Consider cancelling 6A33 / 6P40
+GE13,INS-02,Pilotman
+GE13,INS-02,Handsignaller
+GE13,INS-02,Cow Green GSP operator (if needed)
+GE13,INS-03,"Points: 2392, 2396, 2416 (Cow Green GSP), 2451, 2459"
+GE13,INS-04,-TFL ticket acceptance (reasonable routes Liverpool St and Kings Cross)
+GE13,INS-04,-GTR ticket acceptance Kings Cross-Ely
+GE13,INS-04,-EMT Ticket acceptance Norwich-Ely
+GE13,INS-04,-Norwich customers to/from London advised to travel FCC via Cambridge and take GA services via Ely and Thetford
+GE13,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE13,INS-05,Norwich).
+GE13,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and GA services Norwich-Cambridge or EMT services to Norwich-Ely.
+GE13,INS-06,"Owing to a {xxx} between Diss and Stowmarket, trains between Norwich and Ipswich are experiencing 20 minute delays and an amended train"
+GE13,INS-06,service is in place.
+GE13,INS-07,Contingency Plan GE13 is in operation/ being implemented
+GE13,INS-07,with no/ the following variations.
+GE13,INS-08,Greater Anglia Service Update at xx:xx
+GE13,INS-08,Owing to a xxx between Diss and Stowmarket one of the lines Norwich-bound/Ipswich-bound is currently closed. We expect the line to reopen at xxx
+GE13,INS-08,/ the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to r eturn train services to
+GE13,INS-08,normal.
+GE13,INS-08,"In order to manage the reduced line capacity between Diss and Stowmarket, we are currently running a reduced train service between Norwich and"
+GE13,INS-08,London. We expect this to continue until approximately xx:xx
+GE13,INS-08,London Ð Norwich services:
+GE13,INS-08,Trains are running at an hourly frequency with extended journey times. Customers to/ from Norwich are advised to travel via Cambridge and GTR
+GE13,INS-08,services to/from Kings Cross.
+GE13,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE14,INS-01,None
+GE14,INS-02,Handsignaller
+GE14,INS-02,Groundframe Operator at Flordon if needed
+GE14,INS-03,"Points: 2451, 2459, Flordon Groundframe (if needed), 2837 (Lakenham), 2845."
+GE14,INS-04,-TFL ticket acceptance (reasonable routes Liverpool St and Kings Cross)
+GE14,INS-04,-GTR ticket acceptance Kings Cross-Ely
+GE14,INS-04,-EMT Ticket acceptance Norwich-Ely
+GE14,INS-04,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE14,INS-04,Norwich).
+GE14,INS-04,-Norwich customers to/from London advised to travel GTR via Cambridge and take GA services via Ely and Thetford
+GE14,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services between London and
+GE14,INS-05,Norwich).
+GE14,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and GA services Norwich-Cambridge or EMT services to Norwich-Ely.
+GE14,INS-06,"Owing to a {xxx} between Diss and Norwich, trains between Norwich and Ipswich are experiencing 20 minute delays and an amended train service"
+GE14,INS-06,is in place.
+GE14,INS-07,Contingency Plan GE14 is in operation/ being implemented with no/ the following variations.
+GE14,INS-08,Greater Anglia Service Update at xx:xx
+GE14,INS-08,Owing to a xxx between Diss and Norwich one of the lines Norwich-bound/Ipswich-bound is currently closed. We expect the line to reopen at xxx /
+GE14,INS-08,the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to ret urn train services to
+GE14,INS-08,normal.
+GE14,INS-08,"In order to manage the reduced line capacity between Diss and Stowmarket, we are currently running a reduced train service between Norwich and"
+GE14,INS-08,London. We expect this to continue until approximately xx:xx
+GE14,INS-08,London Ð Norwich services:
+GE14,INS-08,Trains are running at an hourly frequency with extended journey times. Customers to/ from Norwich are advised to travel via Cambridge and GTR
+GE14,INS-08,services to/from Kings Cross.
+GE14,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE22,INS-01,Divert freight via BurySt Edmunds & across country up to W9 traffic only
+GE22,INS-02,MOMÕs or Maintenance staff capable of route setting to be moved / positioned at Colchester & Manningtree to ensure that someone is on site
+GE22,INS-02,should there be issues with pointwork.
+GE22,INS-03,"Points at Colchester: 3012, 3015, 3023"
+GE22,INS-03,Points at Manningtree: 1261
+GE22,INS-04,-CSL2 mobilised North via on-call structure
+GE22,INS-04,-RPIs and MTST support at Manningtree
+GE22,INS-04,-Request Driver Manager to Colchester and Manningtree via On-Call Operations L1 North
+GE22,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ilford,"
+GE22,INS-04,Ipswich and Norwich.
+GE22,INS-04,-Request Octagon staff to attend Colchester Town (when booked unmanned) and Colchester.
+GE22,INS-05,-Customers London-Norwich to travel via Cambridge and GTR to Kings Cross
+GE22,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE22,INS-05,-Establish rail replacement bus link Manningtree and Colchester within 60 minutes.
+GE22,INS-06,"Owing to a {xxx} between Manningtree and Colchester, the mainline is currently closed. Trains are operating to and from Colchester to Clacton,"
+GE22,INS-06,Ipswich and Norwich. A rail replacement bus service is in preparation/ operation between Colchester and Manningtree where customers may
+GE22,INS-06,continue their journey to and from London.
+GE22,INS-06,Normal services are expected to resume at xxxxxxx.
+GE22,INS-07,Contingency Plan GE22 is in operation/ being implemented with no/ the following variations.
+GE22,INS-08,Greater Anglia Service Update at xx:xx
+GE22,INS-08,Owing to a xxx between Colchester and Manningtree the line is currently closed. We expect the line to reopen at xxx / the line is currently closed
+GE22,INS-08,and we are working to assess the problem / The line has now reopened and we are working to return train services to normal.
+GE22,INS-08,A rail replacement bus service is in preparation/ operation between Colchester and Manningtree where customers may continue their journey to and
+GE22,INS-08,from London.
+GE22,INS-08,and expect this to continue until approximately xx:xx
+GE22,INS-08,"London Ð Ipswich, Norwich and surrounding branch lines:"
+GE22,INS-08,All services are currently suspended between Colchester and Manningtree. Customers to and from London are advised that a rail replacement bus
+GE22,INS-08,service is operating between Manningtree and Colchester connecting with train services operating to and from Colchester to London.
+GE22,INS-08,Services which would normally run between London and Harwich are running between Manningtree and Harwich in both directions. Customers
+GE22,INS-08,wishing to travel to/from these stations should change at Manningtree.
+GE22,INS-08,Customers travelling to/ from Norwich are advised to travel via Cambridge and connect with GTR services to/ from Kings Cross.
+GE22,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE23,INS-01,Shunting to take place at Manningtree North Jn if available. Shunting can also take place at Mistley. Permission should be obtained from Operations
+GE23,INS-01,on-call level 2 to start passenger services from the down main platform (platform 3) at Manningtree if this is necessary.
+GE23,INS-01,Divert freight via BurySt Edmunds & across country up to W9 traffic only
+GE23,INS-02,MOMÕs or Maintenance staff capable of route setting to be moved / positioned at Manningtree & Ipswich to ensure that someone is on site should
+GE23,INS-02,there be issues with pointwork.
+GE23,INS-03,"Points at Manningtree & Mistley: 1247, 1252, 1254, 1262, 1271, 1272"
+GE23,INS-03,"Points at Ipswich: 1323, 1326, 1327, 1341, 1342, 1343"
+GE23,INS-04,-CSL2 mobilised North via on-call structure
+GE23,INS-04,-RPIs and MTST support at Manningtree
+GE23,INS-04,-Request Driver Manager to Ipswich and Manningtree via On-Call Operations L1 North
+GE23,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ilford,"
+GE23,INS-04,Ipswich and Norwich.
+GE23,INS-05,-Customers London-Norwich to travel via Cambridge and GTR to Kings Cross
+GE23,INS-05,-Establish rail replacement bus link Manningtree and Colchester within 60 minutes.
+GE23,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE23,INS-06,"Owing to a {xxx} between Manningtree and Ipswich, the mainline is currently closed. Trains are operating at a reduced frequency to and from"
+GE23,INS-06,"London and Manningtree and to and from, Ipswich and Norwich. A rail replacement bus service is in preparation/ operation between Ipswich and"
+GE23,INS-06,Manningtree where customers may continue their journey.
+GE23,INS-06,Normal services are expected to resume at xxxxxxx.
+GE23,INS-07,Contingency Plan GE23 is in operation/ being implemented with no/ the following variations.
+GE23,INS-08,Greater Anglia Service Update at xx:xx
+GE23,INS-08,Owing to a xxx between Ipswich and Manningtree the line is currently closed. We expect the line to reopen at xxx / the line is currently closed and
+GE23,INS-08,we are working to assess the problem / The line has now reopened and we are working to return train services to normal.
+GE23,INS-08,A rail replacement bus service is in preparation/ operation between Ipswich and Manningtree where customers may continue their journey to and
+GE23,INS-08,from London and we expect this to continue until approximately xx:xx
+GE23,INS-08,London Ð Ipswich and Norwich:
+GE23,INS-08,All services are currently suspended between Ipswich and Manningtree. Customers to and from London are advised that a rail replacement bus
+GE23,INS-08,service is operating between Manningtree and Colchester connecting with train services operating to and from Manningtree to London.
+GE23,INS-08,Customers travelling to/ from Ipswich are advised to travel to Manningtree and connect with rail replacement bus service.
+GE23,INS-08,Customers travelling to/ from Norwich are advised to travel via Cambridge and connect with GTR services to/ from Kings Cross.
+GE23,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE24,INS-01,Will require shunting in and out of the loop at Stowmarket
+GE24,INS-02,MOMÕs or Maintenance staff capable of route setting to be moved / positioned at Ipswich & Stowmarket to ensure that someone is on site should
+GE24,INS-02,there be issues with pointwork
+GE24,INS-03,"Points at Ipswich: 1301, 1302, 1310, 1311,"
+GE24,INS-03,"Points at Stowmarket: 2384, 2385, 2389"
+GE24,INS-03,Points at Diss: 2451
+GE24,INS-04,-CSL2 mobilised North via on-call structure
+GE24,INS-04,-RPIs and MTSO support at Ipswich and Stowmarket
+GE24,INS-04,-CSL2 mobilised North via on-call structure
+GE24,INS-04,-Request Driver Manager to Ipswich and Stowmarket via On-Call Operations L1 North
+GE24,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ipswich"
+GE24,INS-04,and Norwich.
+GE24,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and take GA services Norwich-Cambridge or EMT services to Norwich-
+GE24,INS-05,Ely.
+GE24,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE24,INS-05,-Local buses (GA tickets not passed)
+GE24,INS-05,-Local Bus 87/88 operates all stations Ipswich to Stowmarket
+GE24,INS-05,-Local Bus 459 operates Stowmarket to Diss
+GE24,INS-05,-Establish rail replacement bus link calling all stations Ipswich-Diss
+GE24,INS-06,"Owing to a {xxx} between Stowmarket and Ipswich, the mainline is currently closed. A rail replacement bus service is in preparation/ operation"
+GE24,INS-06,between Ipswich and Diss where customers may continue their journey.
+GE24,INS-06,Normal services are expected to resume at xxxxxxx.
+GE24,INS-07,Contingency Plan GE24 is in operation/ being implemented with no/ the following variations.
+GE24,INS-08,Greater Anglia Service Update at xx:xx
+GE24,INS-08,Owing to a xxx between Haughley and Ipswich the line Norwich-bound and Ipswich-bound is currently closed. We expect the line to reopen at xxx /
+GE24,INS-08,the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to ret urn train services to
+GE24,INS-08,normal.
+GE24,INS-08,Train services are operating between London and Ipswich and between Norwich and Diss. Cambridge and Ipswich. We expect this to continue until
+GE24,INS-08,approximately xx:xx
+GE24,INS-08,"London Ð Stowmarket, Diss and Norwich:"
+GE24,INS-08,Customers to/ from Diss and London are advised to travel to Norwich and then via Cambridge and GTR services to/from London Kings Cross.
+GE24,INS-08,Customers to/ from Stowmarket are advised to travel to via Cambridge and connect with GTR services to/from London Kings Cross.
+GE24,INS-08,Customers to/ from Norwich and London are advised to travel via Cambridge and GTR services to/from London Kings Cross.
+GE24,INS-08,"Customers travelling between Stowmarket, Diss and Norwich to Ipswich and Colchester are advised that a limited rail-replacement bus service is"
+GE24,INS-08,currently in operation/ in preparation.
+GE24,INS-08,Ipswich Ð Cambridge and Peterborough:
+GE24,INS-08,Trains between Ipswich and Cambridge and between Ipswich and Peterborough will operate to/from Stowmarket. A rail replacement bus service is
+GE24,INS-08,in operation/ in preparation between Ipswich and Stowmarket.
+GE24,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE24A,INS-01,In the event that Stowmarket loop is not accessible and Stowmarket London End crossover can not be used:
+GE24A,INS-02,MOMÕs or Maintenance staff capable of route setting to be moved / positioned at Ipswich & Stowmarket to ensure that someone i s on site should
+GE24A,INS-02,there be issues with pointwork
+GE24A,INS-03,"-Points at Ipswich: 1301, 1302, 1310, 1311,"
+GE24A,INS-03,"-Points at Stowmarket: 2384, 2385, 2389"
+GE24A,INS-03,-Points at Diss: 2451
+GE24A,INS-04,-CSL2 mobilised North via on-call structure
+GE24A,INS-04,-RPIs and MTSO support at Ipswich and Stowmarket
+GE24A,INS-04,-CSL2 mobilised North via on-call structure
+GE24A,INS-04,-Request Driver Manager to Ipswich and Stowmarket via On-Call Operations L1 North
+GE24A,INS-04,"-Advise contingency plan on traincrew information monitors (TIM) in the following traincrew depots: Liverpool Street, Colchester, Clacton, Ipswich"
+GE24A,INS-04,and Norwich.
+GE24A,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and take AGA services Norwich-Cambridge or EMT services to Norwich-
+GE24A,INS-05,Ely.
+GE24A,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE24A,INS-05,-Local buses (AGA tickets not passed)
+GE24A,INS-05,-Local Bus 87/88 operates all stations Ipswich to Stowmarket
+GE24A,INS-05,-Local Bus 459 operates Stowmarket to Diss
+GE24A,INS-05,-Establish rail replacement bus link calling all stations Ipswich-Diss
+GE24A,INS-06,"Owing to a {xxx} between Stowmarket and Ipswich, the mainline is currently closed. A rail replacement bus service is in preparation/ operation"
+GE24A,INS-06,between Ipswich and Diss where customers may continue their journey.
+GE24A,INS-06,Normal services are expected to resume at xxxxxxx.
+GE24A,INS-07,Contingency Plan GE24A is in operation/ being implemented
+GE24A,INS-07,with no/ the following variations.
+GE24A,INS-08,Abellio Greater Anglia Service Update at xx:xx
+GE24A,INS-08,Owing to a xxx between Haughley and Ipswich the line Norwich-bound and Ipswich-bound is currently closed. We expect the line to reopen at xxx /
+GE24A,INS-08,the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to return train services to
+GE24A,INS-08,normal.
+GE24A,INS-08,Train services are operating between London and Ipswich and between Norwich and Diss. Cambridge and Ipswich. We expect this to continue until
+GE24A,INS-08,approximately xx:xx
+GE24A,INS-08,"London Ð Stowmarket, Diss and Norwich:"
+GE24A,INS-08,Customers to/ from Diss and London are advised to travel to Norwich and then via Cambridge and GTR services to/from London Kings Cross.
+GE24A,INS-08,Customers to/ from Stowmarket are advised to travel to via Cambridge and connect with GTR services to/from London Kings Cross.
+GE24A,INS-08,Customers to/ from Norwich and London are advised to travel via Cambridge and GTR services to/from London Kings Cross.
+GE24A,INS-08,"Customers travelling between Stowmarket, Diss and Norwich to Ipswich and Colchester are advised that a limited rail-replacement bus service is currently in"
+GE24A,INS-08,operation/ in preparation.
+GE24A,INS-08,Ipswich Ð Cambridge and Peterborough:
+GE24A,INS-08,Trains between Ipswich and Cambridge and between Ipswich and Peterborough will operate to/from Stowmarket. A rail replacement bus service is in operation/ in
+GE24A,INS-08,preparation between Ipswich and Stowmarket.
+GE24A,INS-08,All other Abellio Greater Anglia Routes: There is currently a good service running on all other routes.
+GE25,INS-01,Freight to be diverted via London Where possible
+GE25,INS-02,None
+GE25,INS-03,"Points at Ipswich: 1301, 1302, 1310, 1311"
+GE25,INS-03,Points at Diss: 2451
+GE25,INS-03,"Points at Bury: 27, 28"
+GE25,INS-04,-CSL2 mobilised North via on-call structure
+GE25,INS-04,-RPIs and MTSO support at Ipswich and Stowmarket and unmanned stations where possible
+GE25,INS-05,-Norwich customers to/from London advised to travel GTR via Cambridge and take GA services Norwich-Cambridge or EMT services to Norwich-
+GE25,INS-05,Ely.
+GE25,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE25,INS-05,-Local buses (GA tickets not passed)
+GE25,INS-05,- Local Bus 384 operates all stations Bury St Edmunds to Stowmarket
+GE25,INS-05,- Local Bus 87/88 operates all stations Ipswich to Stowmarket
+GE25,INS-05,- Local Bus 459 operates Stowmarket to Diss
+GE25,INS-05,-Establish rail replacement bus link calling all stations Ipswich-Diss
+GE25,INS-05,-Establish rail replacement bus link calling all stations Ipswich-Bury St Edmunds
+GE25,INS-06,"Owing to a {xxx} between Stowmarket and Haughley, train services between Ipswich and Norwich and between Bury St Edmunds and Ipswich have"
+GE25,INS-06,been suspended. A rail replacement bus service is in preparation/ operation to enable customers to continue their journey.
+GE25,INS-06,Normal services are expected to resume at xxxxxxx.
+GE25,INS-07,Contingency Plan GE25 is in operation/ being implemented
+GE25,INS-07,with no/ the following variations.
+GE25,INS-08,Greater Anglia Service Update at xx:xx
+GE25,INS-08,Owing to a xxx between Haughley and Ipswich the line Norwich-bound and Ipswich-bound is currently closed. We expect the line to reopen at xxx /
+GE25,INS-08,the line is currently closed and we are working to assess the problem / The line has now reopened and we are working to ret urn train services to
+GE25,INS-08,normal.
+GE25,INS-08,Train services are operating between London and Ipswich and between Norwich and Diss. Cambridge and Peterborough services are operating as
+GE25,INS-08,far as Bury St Edmunds. We expect this to continue until approximately xx:xx
+GE25,INS-08,"London Ð Stowmarket, Diss and Norwich:"
+GE25,INS-08,Customers to/ from Diss and London are advised to travel to Norwich and then via Cambridge and GTR services to/from London Kings Cross.
+GE25,INS-08,Customers to/ from Stowmarket are advised to travel to Ipswich and take local bus routes 87 or 88/ rail replacement bus.
+GE25,INS-08,Customers to/ from Norwich and London are advised to travel via Cambridge and GTR services to/from London Kings Cross.
+GE25,INS-08,Ipswich Ð Cambridge and Peterborough:
+GE25,INS-08,Trains between Ipswich and Cambridge and between Ipswich and Peterborough will operate to/from Bury St Edmunds. A rail replacement bus
+GE25,INS-08,"service is in operation/ in preparation all stations between Ipswich and Stowmarket. Alternatively, local bus route 384 operates all stations between"
+GE25,INS-08,Bury St Edmunds at Stowmarket. Customers should note that Greater Anglia tickets will not be passed on local buses.
+GE25,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
+GE26,INS-01,6P40 / 6P41 to divert via Ely & Thetford
+GE26,INS-02,None
+GE26,INS-03,"Points at Diss: 2451, 2459"
+GE26,INS-04,-CSL2 mobilised North via on-call structure
+GE26,INS-04,-RPIs and MTSO support at Diss
+GE26,INS-05,-Customers London-Norwich to travel via Cambridge and GTR to Kings Cross
+GE26,INS-05,-Advance Purchase Ticket holders may travel up to 60 minutes earlier/later than their booked train (Intercity services)
+GE26,INS-05,-Aim to have bus service in place 60 minutes into the incident:
+GE26,INS-05,-Establish rail replacement bus link Norwich-Diss
+GE26,INS-06,Owing to a {xxx} between Diss and Norwich The line is currently closed.
+GE26,INS-06,A rail replacement bus service is being established/ in operation between Diss and Norwich.
+GE26,INS-07,Contingency train service plan GE26 is in operation/ being implemented
+GE26,INS-07,with no/ the following variations.
+GE26,INS-08,Greater Anglia Service Update at xx:xx
+GE26,INS-08,"Owing to a xxx between Diss and Norwich, the line is currently closed. We expect the line to reopen at xxx / the line is currently closed and we are"
+GE26,INS-08,working to assess the problem / The line has now reopened and we are working to return train services to normal.
+GE26,INS-08,Train services are operating between London and Diss. We expect this to continue until approximately xx:xx
+GE26,INS-08,London Ð Norwich
+GE26,INS-08,Customers to/ from Norwich and London are advised to travel via Cambridge and GTR services to/from London Kings Cross.
+GE26,INS-08,Trains are operating at a half hour frequency between London and Diss.
+GE26,INS-08,All other Greater Anglia Routes: There is currently a good service running on all other routes.
