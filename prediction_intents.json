@@ -7,6 +7,21 @@
       "Got your departure station."
     ]
   },
+    "greeting": {
+    "patterns": [
+      "hi",
+      "Hi",
+      "hello",
+      "Hello",
+      "hey",
+      "Hey",
+      "holla",
+      "Holla"
+    ],
+    "responses": [
+      "Thanks for checking in.\nI can help you with the delay prediction"
+    ]
+  },
   "arr_station": {
     "patterns": [
       "arrival station is"
@@ -17,8 +32,9 @@
   },
   "dep_delay": {
     "patterns": [
-      "departure delay is",
-      "departing delay is",
+      "am delayed",
+      "train is delayed",
+      "Train is delayed,",
       "delay is"
     ],
     "responses": [
@@ -59,7 +75,7 @@
       "I have train delay."
     ],
     "responses": [
-      "I can predict your arrival time, please tell me your departure station, \narrival station, departure delay in minutes and your expected arrival time. \nI can only predict delay times of stations between Liverpool Street Station and Norwich."
+      "I can predict your arrival time, please tell me your departure station, arrival station, departure delay in minutes and your expected arrival time. I can only predict delay times of stations between Liverpool Street Station and Norwich."
     ]
   }
 }

@@ -4,7 +4,7 @@ from tkinter import ttk
 import sys
 import time
 import threading
-from chatbot import ChatBot  # Ensure this import matches your file structure
+from task_3 import ContingencyPlan
 
 
 class StdoutRedirector:
@@ -21,27 +21,27 @@ class StdoutRedirector:
             self.text_widget.see(tk.END)
 
     def flush(self):
-        pass  # This method is required for compatibility
+        pass
 
 
 class GUI:
     def __init__(self, root):
         self.root = root
-        self.chatbot = ChatBot()
+        self.contingency = ContingencyPlan()
         self.setup_ui()
-        self.stdout_redirector = StdoutRedirector(self.chat_display)  # Redirect stdout to the chat display
-        self.initial_greeting()  # Display the initial greeting message
+        self.stdout_redirector = StdoutRedirector(self.chat_display)
+        self.initial_greeting()
 
     def setup_ui(self):
         self.root.title("RailBot")
         self.root.geometry("600x500")
         self.root.configure(bg="#f0f0f0")
 
-        # Configure the root grid and design
+
         self.root.grid_rowconfigure(0, weight=1)
         self.root.grid_columnconfigure(0, weight=1)
 
-        # Create chat display
+
         self.chat_display = tk.Text(self.root, height=20, width=50, state=tk.DISABLED, bg="#fff", fg="#333",
                                     wrap=tk.WORD,
                                     padx=10, pady=10, font=("Helvetica", 12))
@@ -49,22 +49,22 @@ class GUI:
         self.chat_display.tag_configure("user_message", foreground="#007bff", justify="right")
         self.chat_display.tag_configure("bot_message", foreground="#333", justify="left")
 
-        # Create scrollbar
+
         scrollbar = ttk.Scrollbar(self.root, command=self.chat_display.yview)
         scrollbar.grid(row=0, column=1, sticky="ns")
         self.chat_display.config(yscrollcommand=scrollbar.set)
 
-        # Create entry
+
         self.entry = ttk.Entry(self.root, width=50, font=("Helvetica", 12))
         self.entry.grid(row=1, column=0, padx=10, pady=5, sticky="ew")
         self.entry.bind("<Return>", self.send_message)
 
-        # Create send button
+
         send_button = ttk.Button(self.root, text="Send", command=self.send_message)
         send_button.grid(row=2, column=0, padx=10, pady=5, sticky="ew")
 
     def initial_greeting(self):
-        greeting_message = "Hi, how can I help you?"
+        greeting_message = "Hello, how can I help."
         self.slow_print(f"Chatbot:\n{greeting_message}", "bot_message")
 
     def send_message(self, event=None):
@@ -72,16 +72,16 @@ class GUI:
         if user_input.lower() in ["exit", "quit", "bye"]:
             self.root.destroy()
         else:
-            # Display user's message
+
             self.display_message(f"You:\n{user_input}", "user_message")
             # Clear the entry field after displaying user input
             self.entry.delete(0, tk.END)
 
-            # Process user's message with ChatBot
+
             threading.Thread(target=self.process_user_input, args=(user_input,)).start()
 
     def process_user_input(self, user_input):
-        response = self.chatbot.main(user_input)
+        response = self.contingency.main(user_input)
         # Display ChatBot's response
         self.slow_print(f"Chatbot:\n{response}", "bot_message")
 

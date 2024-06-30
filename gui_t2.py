@@ -4,7 +4,7 @@ from tkinter import ttk
 import sys
 import time
 import threading
-from chatbot import ChatBot  # Ensure this import matches your file structure
+from task_2 import PredictDelay  # Ensure this import matches your file structure
 
 
 class StdoutRedirector:
@@ -27,7 +27,7 @@ class StdoutRedirector:
 class GUI:
     def __init__(self, root):
         self.root = root
-        self.chatbot = ChatBot()
+        self.predict = PredictDelay()
         self.setup_ui()
         self.stdout_redirector = StdoutRedirector(self.chat_display)  # Redirect stdout to the chat display
         self.initial_greeting()  # Display the initial greeting message
@@ -81,7 +81,7 @@ class GUI:
             threading.Thread(target=self.process_user_input, args=(user_input,)).start()
 
     def process_user_input(self, user_input):
-        response = self.chatbot.main(user_input)
+        response = self.predict.main(user_input)
         # Display ChatBot's response
         self.slow_print(f"Chatbot:\n{response}", "bot_message")
 

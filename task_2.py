@@ -19,6 +19,9 @@ class PredictDelay(object):
         self.predicting = PredictingDelay()
         self.is_done = False
 
+    def load_prediction_knowledge_base(self):
+        with open("prediction_intents.json") as f:
+            return json.load(f)
     def reset_recorded_data(self):
         f = open(self.recorded_data, 'w')
         f.write("")
@@ -158,7 +161,7 @@ class PredictDelay(object):
 
     def extract_departure_delay(self, text):
         threshold = 70
-        delay_match = re.search(r'\b(departing delay is|delay is)\b\s+([A-Za-z0-9\s]+)', text, re.IGNORECASE)
+        delay_match = re.search(r'\b(am delayed|train is delayed|Train is delayed)\b\s+([A-Za-z0-9\s]+)', text, re.IGNORECASE)
         if delay_match:
             delay_text = delay_match.group(2).strip()
             if delay_text == "":
@@ -195,10 +198,6 @@ class PredictDelay(object):
         else:
             return "Oops, it looks like there's been a mis-input. Please try again."
 
-    def load_prediction_knowledge_base(self):
-        with open("prediction_intents.json") as f:
-            return json.load(f)
-
     def chatbot_response(self, user_input):
         knowledge_base = self.load_prediction_knowledge_base()
         intent = self.get_pred_intent(user_input, knowledge_base)  # calling intent function
@@ -209,74 +208,57 @@ class PredictDelay(object):
                 dept_st_response = self.extract_departure_station(user_input)
                 check_delay_found, delay_response = self.check_pred_delay_recorded_data()
                 if check_delay_found is True:
-                    return delay_response, ""
+                    return delay_response
                 if dept_st_response is True:
-                    return response, ""
+                    return response
                 else:
                     response = dept_st_response
-                    return response, ""
+                    return response
 
             elif intent == "arr_station":
                 arr_st_response = self.extract_arrival_station(user_input)
                 check_delay_found, delay_response = self.check_pred_delay_recorded_data()
                 if check_delay_found is True:
-                    return delay_response, ""
+                    return delay_response
                 if arr_st_response is True:
-                    return response, ""
+                    return response
                 else:
                     response = arr_st_response
-                    return response, ""
+                    return response
 
             elif intent == "dep_delay":
                 dep_delay_response = self.extract_departure_delay(user_input)
                 check_delay_found, delay_response = self.check_pred_delay_recorded_data()
                 if check_delay_found is True:
-                    return delay_response, ""
+                    return delay_response
                 if dep_delay_response is True:
-                    return response, ""
+                    return response
                 else:
                     response = dep_delay_response
-                    return response, ""
+                    return response
 
             elif intent == "expected_arrival":
                 exp_arr_response = self.extract_expected_arrival_time(user_input)
                 check_delay_found, delay_response = self.check_pred_delay_recorded_data()
                 if check_delay_found is True:
-                    return delay_response, ""
+                    return delay_response
                 if exp_arr_response is True:
-                    return response, ""
+                    return response
                 else:
                     response = exp_arr_response
-                    return response, ""
+                    return response
 
             elif intent == "change_conversation":
-                return response, intent
+                return response
 
             elif intent == "predict_delay":
-                return response, ""
+                return response
 
             else:
-                return response, ""
+                return response
         else:
             return "I'm sorry, I didn't understand that."
 
-    # def main(self, user_input):
-    #     while True:
-    #         if user_input.lower() in ["exit", "quit"]:
-    #             break
-    #         response = self.chatbot_response(user_input)
-    #         if response == "Alright, lets talk about something else. Any details that you have mentioned are saved.":
-    #             return response
-    #         if self.is_done is True:
-    #             break
-    #         return response
     def main(self, user_input):
         response = self.chatbot_response(user_input)
         return response
-
-# if __name__ == "__main__":
-#     predict_delay = PredictDelay()
-#     predict_delay.reset_recorded_data()
-#     predict_delay.main()
-#     # print(predict_delay.fetch_all_stations_with_codes())
-#     # print(predict_delay.extract_expected_arrival_time("My expected time of arrival is 15:30."))

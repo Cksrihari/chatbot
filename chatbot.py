@@ -398,59 +398,67 @@ class ChatBot(object):
     # chatbot response
 
 
+
     def chatbot_response(self, user_input):
         knowledge_base = self.load_knowledge_base()
+
         intent = self.get_intent(user_input, knowledge_base)  # calling intent function
         response = random.choice(knowledge_base[intent]["responses"])  # response from KB
         if intent is not None:
             if intent == "book_train_tickets":
                 self.retry_fetching_data(user_input)
-                return response, None
+                return response
 
             elif intent == "ask_date_time":
                 self.retry_fetching_data(user_input)
                 if self.verify_datetime():
                     self.retry_fetching_data(user_input)
-                    return response, None
+                    return response
                 else:
                     return "Date or time cannot be in the past, please retry with valid input"
 
             elif intent == "from_station":
                 departure_found = self.extract_from_location(user_input)
                 if departure_found is True:
-                    return response, None
+                    return response
                 else:
                     response = departure_found
-                return response, None
+                return response
 
             elif intent == "to_station":
                 destination_found = self.extract_to_location(user_input)
                 if destination_found is True:
-                    return response, None
+                    return response
                 else:
                     response = destination_found
-                    return response, None
+                    return response
 
             elif intent == "show_recorded_data":
                 self.read_recorded_data()
-                return response, None
+                return response
 
             elif intent == "all_entities":
                 self.extract_all_entities(user_input)
                 self.save_to_csv()
                 self.retry_fetching_data(user_input)
-                return response, None
+                return response
 
             elif intent == "predict_delay":
-                response = self.predict.main(user_input)
-                return response, intent
+                # call task 2 class
+                while True:
+                    while True:
+                        response = self.predict.main(user_input, knowledge_base_prediction)
+                        if response != ("Alright, lets talk about something else. Any details that you have mentioned "
+                                        "are saved."):
+                            return response
+                    return resource
 
             elif intent == "contingency_plans":
-                response = self.contingency.main(user_input)
-                return response, intent
+                response = self.contingency.main()
+                return response
 
             else:
-                return response, None
+                return response
         else:
             return "I'm sorry, I didn't understand that."
 
@@ -464,11 +472,13 @@ class ChatBot(object):
     #             break
     #         response = self.chatbot_response(user_input)
     #         print("Chatbot:", response)
+
     def main(self, user_input):
         response = self.chatbot_response(user_input)
         return response
 
-#
+
 # if __name__ == "__main__":
 #     chatbot = ChatBot()
 #     chatbot.main()
+#     # chatbot.retry_fetching_data("please find ticket from london liverpool street to norwich. the date is 26 june. the time is 17:30")

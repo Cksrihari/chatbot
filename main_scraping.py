@@ -12,6 +12,13 @@ class MainScraping(object):
         self.tt_scraper = TrainTimes()
         self.ga_scraper = GreaterAnglia()
 
+    @staticmethod
+    def slow_print(text):  # Delayed printing function
+        for character in text:
+            sys.stdout.write(character)  # writes the character
+            sys.stdout.flush()
+            time.sleep(0.01)
+
     def cheapest_compared(self):
         cheapest_fare = float('inf')
         cheapest_rows = []
@@ -36,23 +43,23 @@ class MainScraping(object):
             if len(cheapest_rows) == 1:
                 fare = cheapest_rows[0]['Fare']
                 url = cheapest_rows[0]['URL']
-                print(f"Origin: {origin}")
-                print(f"Destination: {destination}")
-                print(f"Date: {date}")
-                print(f"Cheapest Fare: {fare}")
-                print(f"URL: {url}")
+                self.slow_print(f"Origin: {origin}")
+                self.slow_print(f"Destination: {destination}")
+                self.slow_print(f"Date: {date}")
+                self.slow_print(f"Cheapest Fare: {fare}")
+                self.slow_print(f"URL: {url}")
             else:
                 fare = cheapest_rows[0]['Fare']
                 url1 = cheapest_rows[0]['URL']
                 url2 = cheapest_rows[1]['URL']
-                print(f"Origin: {origin}")
-                print(f"Destination: {destination}")
-                print(f"Date: {date}")
-                print(f"Cheapest Fare: {fare}")
-                print(f"URL 1: {url1}")
-                print(f"URL 2: {url2}\n")
+                self.slow_print(f"Origin: {origin}")
+                self.slow_print(f"Destination: {destination}")
+                self.slow_print(f"Date: {date}")
+                self.slow_print(f"Cheapest Fare: {fare}")
+                self.slow_print(f"URL 1: {url1}")
+                self.slow_print(f"URL 2: {url2}\n")
         else:
-            print("No cheapest fare, please try different combinations")
+            self.slow_print("No cheapest fare, please try different combinations")
 
     def convert_date_format(self, date_str):
         try:

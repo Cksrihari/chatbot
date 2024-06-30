@@ -64,7 +64,6 @@
     "patterns": [
       "I want to book a train",
       "Book a train for me",
-      "Find me a cheapest ticket",
       "I need to book a train",
       "Can you help me book a train?",
       "I'd like to book a train",
@@ -82,7 +81,12 @@
     "patterns": [
       "I am travelling from",
       "Im travelling from",
-      "From"
+      "From",
+      "leaving from",
+      "departing from",
+      "starting from",
+      "originating from",
+      "traveling from"
     ],
     "responses": [
       "Your departure station has been noted."
@@ -93,7 +97,10 @@
       "I am travelling to",
       "to",
       "heading to",
-      "going to"
+      "going to",
+      "arriving at",
+      "reaching",
+      "destination"
     ],
     "responses": [
       "Your destination station has been noted."

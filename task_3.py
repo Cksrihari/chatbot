@@ -19,7 +19,7 @@ class ContingencyPlan(object):
         self.recorded_contingency_data = os.getcwd() + "/contingency_plan_recorded_data.csv"
         self.contingency_details = ContingencyDetails()
 
-    def load_contingency_knowledge_base(self):
+    def load_prediction_knowledge_base(self):
         with open("contingency_intents.json") as f:
             return json.load(f)
 
@@ -93,9 +93,9 @@ class ContingencyPlan(object):
         status = contingency_data['train_status']
         service = contingency_data['train_service']
         peak = contingency_data['peak']
-        delayed_time = self.contingency_details.get_peak_message(plan_code, status, service, peak)
+        contingency = self.contingency_details.get_peak_message(plan_code, status, service, peak)
         self.reset_recorded_contingency_data()
-        return delayed_time
+        return contingency
 
     def verify_stations(self, station_1, station_2):
         df = pd.read_csv('blocked_stations_data.csv')
@@ -122,7 +122,8 @@ class ContingencyPlan(object):
                     row['station_2'] == station_2 and
                     row['blockage'] == blockage):
                 self.get_plan_code()
-                return True, "Can you please provide more details."
+                response = self.ask_more_info("Alright, I have the plans for this type of blockage.")
+                return True, response
 
         self.reset_recorded_verified_data()
         return False, ("I am sorry, it seems like the data you have provided is not consistent with the one I "
@@ -208,7 +209,6 @@ class ContingencyPlan(object):
         elif pattern_3:
             service = pattern_3.group(1).strip()
 
-        print(service)
         if service in ["Greater Anglia", "Freight"]:
             df_service = pd.read_csv('contingency_plan_recorded_data.csv')
             df_service.at[0, 'train_service'] = service
@@ -246,35 +246,54 @@ class ContingencyPlan(object):
         else:
             return "Oops, it looks like there's been a mis-input. Please try again."
 
+    def ask_more_info(self, response):
+        df = pd.read_csv('contingency_plan_recorded_data.csv')
+
+        if not df.empty:
+            first_row = df.iloc[0]
+            missing_info = []
+
+            if pd.isnull(first_row['train_status']):
+                missing_info.append("The status of the train. ")
+            if pd.isnull(first_row['train_service']):
+                missing_info.append("the service of the train. ")
+            if pd.isnull(first_row['peak']):
+                missing_info.append("the time")
+
+            if missing_info:
+                additional_info = " Please provide the following information: " + ", ".join(missing_info) + "."
+                response += additional_info
+
+        return response
+
     def chatbot_response(self, user_input):
-        knowledge_base = self.load_contingency_knowledge_base()
-        intent = self.get_contingency_intent(user_input, knowledge_base)
-        print(intent)
-        response = random.choice(knowledge_base[intent]["responses"])
+        knowledge_base = self.load_prediction_knowledge_base()
+        intent = self.get_contingency_intent(user_input, knowledge_base)  # calling intent function
+        response = random.choice(knowledge_base[intent]["responses"])  # response from KB
         if intent is not None:
             if intent == "partial_blockage":
                 self.save_blockage_to_verify("partial")
                 is_verified, is_verified_response = self.verify_stations_and_blockage()
                 if is_verified is True:
                     response = is_verified_response
-                    return response, ""
-                return response, ""
+                    return response
+                return response
 
             if intent == "full_blockage":
                 self.save_blockage_to_verify("full")
                 is_verified, is_verified_response = self.verify_stations_and_blockage()
                 if is_verified is True:
                     response = is_verified_response
-                    return response, ""
-                return response, ""
+                    return response
+                return response
 
             if intent == "blocked_stations":
                 stations_exist = self.extract_blocked_stations(user_input)
                 if stations_exist is True:
-                    return response, ""
+                    return response
                 else:
                     response = stations_exist
-                    return response, ""
+                    return response
 
             if intent == "train_status":
                 train_status = self.extract_and_save_status(user_input)
@@ -282,69 +301,47 @@ class ContingencyPlan(object):
                 if check_contingency_found is True:
                     return contingency_response
                 if train_status is True:
-                    return response, ""
+                    response = self.ask_more_info(response)
+                    return response
                 else:
                     response = train_status
-                    return response, ""
+                    return response
 
             if intent == "train_service":
-                anglia_service = self.extract_and_save_service(user_input)
+                train_service = self.extract_and_save_service(user_input)
                 check_contingency_found, contingency_response = self.check_contingency_recorded_data()
                 if check_contingency_found is True:
                     return contingency_response
-                if anglia_service is True:
-                    return response, ""
+                if train_service is True:
+                    response = self.ask_more_info(response)
+                    return response
                 else:
-                    response = anglia_service
-                    return response, ""
+                    response = train_service
+                    return response
 
             if intent == "time_intent":
                 time = self.extract_time(user_input)
                 check_contingency_found, contingency_response = self.check_contingency_recorded_data()
                 if check_contingency_found is True:
-                    return contingency_response, ""
+                    return contingency_response
                 if time is True:
-                    return response, ""
+                    response = self.ask_more_info(response)
+                    return response
                 else:
                     response = time
-                    return response, ""
+                    return response
 
             if intent == "change_conversation":
-                return response, intent
+                return response
+
+            if intent == "contingency_plans":
+                return response
 
             else:
-                return response, ""
+                return response
         else:
             return "I'm sorry, I didn't understand that."
 
-    # def main(self):
-    #     knowledge_base = self.load_prediction_knowledge_base()
-    #     print("Chatbot: I can give you contingency plans for partial and full blockages. Please give me more details. "
-    #           "I would require the type of blockage, the stations between which the blockage occurs, the type of "
-    #           "train service, the time and the status of the train.")
-    #     while True:
-    #         user_input = input("You(I am in task 3): ")
-    #         if user_input.lower() in ["exit", "quit"]:
-    #             print("Chatbot: Goodbye!")
-    #             break
-    #         response = self.chatbot_response(user_input, knowledge_base)
-    #
-    #         if response == "Alright, lets talk about something else.":
-    #             return response
-    #         print("Chatbot:", response)
     def main(self, user_input):
         response = self.chatbot_response(user_input)
         return response
-
-if __name__ == "__main__":
-    contingency = ContingencyPlan()
-    # contingency.main()
-    print(contingency.fetch_blocked_stations())
-    # print(contingency.extract_blocked_stations("The blockage is between and Maningtree."))
-    # print(contingency.verify_stations("Diss", "Norwich"))
-    # contingency.save_stations_to_verify("Diss", "Trowse")
-    # contingency.save_blockage_to_verify("partial")
-    # print(contingency.verify_stations_and_blockage())
-    # contingency.get_plan_code()
-    # print(contingency.extract_and_save_service("The train service is Greater Anglia."))
-    # contingency.extract_time("The time is 12:00.")

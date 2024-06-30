@@ -6,7 +6,22 @@
       "There is a partial blockage between stations."
     ],
     "responses": [
-      "Can you give me more details please."
+      "Alright, I have the plans for this type of blockage."
+    ]
+  },
+      "greeting": {
+    "patterns": [
+      "hi",
+      "Hi",
+      "hello",
+      "Hello",
+      "hey",
+      "Hey",
+      "holla",
+      "Holla"
+    ],
+    "responses": [
+      "Thanks for checking in.\nI can assist you with any blockage and contingencies.\nPlease enter the above mentioned details one by one."
     ]
   },
   "full_blockage": {
@@ -16,7 +31,7 @@
       "There is a full blockage between stations."
     ],
     "responses": [
-      "Can you give me more details please."
+      "Alright, I have the plans for this type of blockage."
     ]
   },
   "blocked_stations": {
@@ -30,21 +45,21 @@
   },
   "train_status": {
     "patterns": [
-      "The status of the train is",
+      "The status of the train",
       "The train is"
     ],
     "responses": [
-      "Can you give me more details please."
+      "Alright, I have noted your information."
     ]
   },
   "train_service": {
     "patterns": [
-      "The train service is.",
+      "The train service.",
       "It is a train service.",
       "It is a train"
     ],
     "responses": [
-      "Can you give me more details please."
+      "Alright, I have noted your information."
     ]
   },
   "time_intent": {
@@ -52,13 +67,12 @@
       "The time is."
     ],
     "responses": [
-      "Can you give me more details please."
+      "Alright, I have noted your information."
     ]
   },
   "change_conversation": {
     "patterns": [
-      "Actually I would like to have a different conversation.",
-      "I dont need you to get contingency plans."
+      "would like to have a different conversation."
     ],
     "responses": [
       "Alright, lets talk about something else."
@@ -67,7 +81,17 @@
   "unknown_intent": {
     "patterns": [],
     "responses":[
-      "I'm sorry i can't understand what you are saying."
+      "I'm sorry I can't understand what you are saying."
+    ]
+  },
+  "contingency_plans": {
+    "patterns": [
+      "railway operator, need contingency plans.",
+      "I am a railway operator, I need contingency plans for a track blockage.",
+      "railway operator, need contingency plans for a line blockage."
+    ],
+    "responses": [
+      "Alright, I would require some details from you to give you the right plans. Can you tell me which blockage it is and between which stations."
     ]
   }
 }
